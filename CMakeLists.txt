@@ -27,11 +27,9 @@ file(GLOB
 	${CMAKE_CURRENT_SOURCE_DIR}/src/**/*.cpp
 )
 
-list(REMOVE_ITEM SRC_FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
-
 add_executable(
 	${CMAKE_PROJECT_NAME}
-	${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/main.cc
 	${SRC_FILES}
 )
 
